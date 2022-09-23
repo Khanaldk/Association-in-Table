@@ -1,0 +1,24 @@
+module.exports=
+{
+        swaggerDefinition: {
+          openapi: '3.0.1',
+          info: {
+            version: '1.0.0',
+            title: 'Project about Association',
+            description: 'We saw here how to make relationship between two tables ',
+            servers: ['http://localhost:8000'],
+          },
+          components: {
+            securitySchemes: {
+              jwt: {
+                type: 'http',
+                scheme: 'bearer',
+                bearerFormat: 'JWT',
+              },
+            },
+          },
+        },
+        apis: ['routes/*.js'],
+      };
+      
+
